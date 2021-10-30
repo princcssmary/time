@@ -1,16 +1,12 @@
-import random
-import string
 import generate_num_for_draw
 import time
 
 
-
-FUNC_DICT = {'0':generate_num_for_draw.make_zero, '1':generate_num_for_draw.make_one,
-     '2':generate_num_for_draw.make_two, '3':generate_num_for_draw.make_three,
-     '4':generate_num_for_draw.make_four, '5':generate_num_for_draw.make_five,
-     '6':generate_num_for_draw.make_six, '7':generate_num_for_draw.make_seven,
-     '8':generate_num_for_draw.make_eight, '9':generate_num_for_draw.make_nine}
-
+FUNC_DICT = {'0': generate_num_for_draw.make_zero, '1': generate_num_for_draw.make_one,
+             '2': generate_num_for_draw.make_two, '3': generate_num_for_draw.make_three,
+             '4': generate_num_for_draw.make_four, '5': generate_num_for_draw.make_five,
+             '6': generate_num_for_draw.make_six, '7': generate_num_for_draw.make_seven,
+             '8': generate_num_for_draw.make_eight, '9': generate_num_for_draw.make_nine}
 
 
 def draw_num(num):
