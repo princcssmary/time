@@ -1,102 +1,99 @@
 import string
 import random
 
-a = string.ascii_lowercase
+
+LETTERS = string.ascii_lowercase
 
 
 def make_zero():
-     zero = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-            random.choice(a) + ' ' + ' ' + random.choice(a),
-            random.choice(a) + ' ' + ' ' + random.choice(a),
-            random.choice(a) + ' ' + ' ' + random.choice(a),
-            random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a)]
+     zero = [random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+            random.choice(LETTERS) + ' ' + ' ' + random.choice(LETTERS),
+            random.choice(LETTERS) + ' ' + ' ' + random.choice(LETTERS),
+            random.choice(LETTERS) + ' ' + ' ' + random.choice(LETTERS),
+            random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS)]
      return zero
 
 
 def make_one():
-    one = [' ' + ' ' + ' ' + random.choice(a),
-        ' ' + ' ' + ' ' + random.choice(a),
-        ' ' + ' ' + ' ' + random.choice(a),
-        ' ' + ' ' + ' ' + random.choice(a),
-        ' ' + ' ' + ' ' + random.choice(a)]
+    one = [' ' + ' ' + ' ' + random.choice(LETTERS),
+        ' ' + ' ' + ' ' + random.choice(LETTERS),
+        ' ' + ' ' + ' ' + random.choice(LETTERS),
+        ' ' + ' ' + ' ' + random.choice(LETTERS),
+        ' ' + ' ' + ' ' + random.choice(LETTERS)]
     return one
 
 
 def make_two():
-    two = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-       ' ' + ' ' + ' ' + random.choice(a),
-       random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-       random.choice(a) + ' ' + ' ' + ' ',
-       random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a)]
+    two = [random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+       ' ' + ' ' + ' ' + random.choice(LETTERS),
+       random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+       random.choice(LETTERS) + ' ' + ' ' + ' ',
+       random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS)]
     return two
 
 
-make_two()
-
 
 def make_three():
-    three = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-             ' ' + ' ' + ' ' + random.choice(a),
-             random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-             ' ' + ' ' + ' ' + random.choice(a),
-             random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a)]
+    three = [random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+             ' ' + ' ' + ' ' + random.choice(LETTERS),
+             random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+             ' ' + ' ' + ' ' + random.choice(LETTERS),
+             random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS)]
     return three
 
 
 def make_four():
-    four = [random.choice(a) + ' ' + ' ' + random.choice(a),
-            random.choice(a) + ' ' + ' ' + random.choice(a),
-            random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
-            ' ' + ' ' + ' ' + random.choice(a),
-            ' ' + ' ' + ' ' + random.choice(a)]
+    four = [random.choice(LETTERS) + ' ' + ' ' + random.choice(LETTERS),
+            random.choice(LETTERS) + ' ' + ' ' + random.choice(LETTERS),
+            random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS) + random.choice(LETTERS),
+            ' ' + ' ' + ' ' + random.choice(LETTERS),
+            ' ' + ' ' + ' ' + random.choice(LETTERS)]
     return four
 
 
 def make_five():
-    five = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-           random.choice(a)+' '+' '+' ',
-           random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-           ' '+' '+' '+random.choice(a),
-           random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a)]
+    five = [random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+           random.choice(LETTERS)+' '+' '+' ',
+           random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+           ' '+' '+' '+random.choice(LETTERS),
+           random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)]
     return five
 
     
 def make_six():
-    
-    six = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-           random.choice(a)+' '+' '+' ',
-           random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-           random.choice(a)+' '+' '+random.choice(a),
-           random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a)]
+    six = [random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+           random.choice(LETTERS)+' '+' '+' ',
+           random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+           random.choice(LETTERS)+' '+' '+random.choice(LETTERS),
+           random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)]
     return six
 
 
 def make_seven():
-    seven = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-             ' '+' '+' '+random.choice(a),
-             ' '+random.choice(a)+random.choice(a)+random.choice(a),
-             ' '+' '+' '+random.choice(a),
-             ' '+' '+' '+random.choice(a)]
+    seven = [random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+             ' '+' '+' '+random.choice(LETTERS),
+             ' '+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+             ' '+' '+' '+random.choice(LETTERS),
+             ' '+' '+' '+random.choice(LETTERS)]
     return seven
 
 
 def make_eight():
-    eight = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-             random.choice(a)+' '+' '+random.choice(a),
-             random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-             random.choice(a)+' '+' '+random.choice(a),
-             random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a)]
+    eight = [random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+             random.choice(LETTERS)+' '+' '+random.choice(LETTERS),
+             random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+             random.choice(LETTERS)+' '+' '+random.choice(LETTERS),
+             random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)]
     return eight
 
 
 def make_nine():
-    nine = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-            random.choice(a)+' '+' '+random.choice(a),
-            random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
-            ' '+' '+' '+random.choice(a),
-            ' '+' '+' '+random.choice(a)]
+    nine = [random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+            random.choice(LETTERS)+' '+' '+random.choice(LETTERS),
+            random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS)+random.choice(LETTERS),
+            ' '+' '+' '+random.choice(LETTERS),
+            ' '+' '+' '+random.choice(LETTERS)]
     return nine
-
 
 
 
