@@ -3,6 +3,7 @@ import random
 
 a = string.ascii_lowercase
 
+
 def make_zero():
      zero = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
             random.choice(a) + ' ' + ' ' + random.choice(a),
@@ -21,7 +22,6 @@ def make_one():
     return one
 
 
-
 def make_two():
     two = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
        ' ' + ' ' + ' ' + random.choice(a),
@@ -30,7 +30,9 @@ def make_two():
        random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a)]
     return two
 
+
 make_two()
+
 
 def make_three():
     three = [random.choice(a) + random.choice(a) + random.choice(a) + random.choice(a),
@@ -41,8 +43,6 @@ def make_three():
     return three
 
 
-          
-
 def make_four():
     four = [random.choice(a) + ' ' + ' ' + random.choice(a),
             random.choice(a) + ' ' + ' ' + random.choice(a),
@@ -50,6 +50,7 @@ def make_four():
             ' ' + ' ' + ' ' + random.choice(a),
             ' ' + ' ' + ' ' + random.choice(a)]
     return four
+
 
 def make_five():
     five = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
@@ -77,6 +78,7 @@ def make_seven():
              ' '+' '+' '+random.choice(a),
              ' '+' '+' '+random.choice(a)]
     return seven
+
 
 def make_eight():
     eight = [random.choice(a)+random.choice(a)+random.choice(a)+random.choice(a),
